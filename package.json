@@ -1,0 +1,28 @@
+{
+  "name": "mdbtojson",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon .",
+    "start": "node ."
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Pedro Obando <pedroobando@hotmail.com>",
+  "description": "Leer archivo de microsoft access y convertir tablas a json",
+  "nodemonConfig": {
+    "ignore": [
+      "mdb/*",
+      "data/*",
+      "fixtures/*"
+    ],
+    "delay": 2500
+  },
+  "dependencies": {
+    "mdb-reader": "^2.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
